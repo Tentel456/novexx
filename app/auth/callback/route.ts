@@ -52,8 +52,8 @@ export async function GET(request: NextRequest) {
         }
       }
 
-      // Перенаправляем на главную страницу
-      return NextResponse.redirect(`${requestUrl.origin}/`)
+      // Redirect to P2P page
+      return NextResponse.redirect(`${requestUrl.origin}/p2p`)
       
     } catch (error) {
       console.error('Unexpected error in auth callback:', error)
